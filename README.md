@@ -1,5 +1,7 @@
 # MARVEL MYSTERY WHO?
 
+Play: https://lucas72fly.github.io/marvel-mystery-who/
+
 A responsive, browser-local deduction game rebuilt from Lucas's original
 Marvel Guess Who prototype. Buildless HTML, CSS, and JavaScript modules.
 

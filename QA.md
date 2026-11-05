@@ -39,12 +39,29 @@ Browser: Chromium through the provided interactive browser.
 Responsive iframe testing is Chromium viewport testing, not Safari emulation.
 Audio toggle and synthesis path exercised; audible output not independently verified.
 
-## Pending
+## Live GitHub Pages verification
 
-- Public repository creation and GitHub Pages deployment require GitHub browser
-  authentication. The connected GitHub API tools do not expose repo creation
-  or Pages configuration; gh CLI is not authenticated.
-- Live URL load, buttons, complete CPU/local games, and mobile checks after deploy.
-- Actual iPhone Safari / physical touch-device test: unavailable in this runtime.
+Public repository: https://github.com/lucas72fly/marvel-mystery-who
 
-The delivered source is ready for publishing; no live deployment is claimed yet.
+Live game: https://lucas72fly.github.io/marvel-mystery-who/
+
+- GitHub Actions test and deploy run #1 succeeded. The engine tests ran on GitHub.
+- Opened the public site and verified all 48 character buttons loaded.
+- Complete Medium CPU game: the player selected Doctor Doom, narrowed Vision
+  through six questions, and won by correctly guessing Vision.
+- Complete local game: Player 1 selected Spider-Man and Player 2 Doctor Doom.
+  Both asked questions; independent boards and logs persisted. Player 1 won
+  by correctly guessing Doctor Doom.
+- Live handoff inspection: zero board cards, secret panels, logs, or prior
+  answer-modal contents remained in the handoff DOM.
+- Hosted site loaded in 390- and 320-pixel Chromium iframes, with all 48 cards
+  and no horizontal document overflow.
+- At 320 pixels, computer setup, questions, answer acknowledgement, computer
+  response, and restart worked. Restart restored 48 candidates and turn 1,
+  cleared clues and returned to private secret selection.
+- No game-origin browser console errors observed during the live desktop test.
+
+## Verification limit
+
+Actual iPhone Safari / physical touch-device testing was unavailable.
+Responsive Chromium iframe tests are not Safari emulation. No Safari pass is claimed.
